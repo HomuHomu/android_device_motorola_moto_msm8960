@@ -168,3 +168,15 @@
 /dev/msm_preproc_ctl      0660  system       audio
 /dev/msm_fm               0660  system       audio
 /dev/msm_rtac             0660  system       audio
+
+#BEGIN, w22602 2012.04.30, For FeliCa
+#BEGIN, MSE, ml-motofelica@nttd-mse.com 06/05/2012, for Change permissions
+/dev/ttyHSL1              0600   felica     felica
+/dev/felica               0600   felica     felica
+/dev/felica_cen           0644   flock      system
+/dev/felica_int           0400   system     system
+/dev/felica_pon           0200   felica     felica
+/dev/felica_rfs           0444   felica     felica
+/dev/felica_rws           0644   system     system
+#END, MSE, ml-motofelica@nttd-mse.com 06/05/2012, for Change permissions
+#END, w22602 2012.04.30, For FeliCa

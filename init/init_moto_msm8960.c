@@ -97,6 +97,12 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "smq_u_ird-user 4.1.2 9.8.2Q_SMUIRD-7 1357751068 release-keys");
         property_set("ro.build.fingerprint", "motorola/XT905_RTAU/smq_u:4.1.2/9.8.2Q_SMUIRD-7/1357751068:user/release-keys");
         property_set("ro.sf.lcd_density", "240");
+    } else if (ISMATCH(modelno, "201M")) {
+        property_set("ro.product.device", "smq_t");
+        property_set("ro.product.model", "201M");
+        property_set("ro.build.description", "smq_sbm-user 4.1.2 9.8.2Q-34_SMJ-102 122 release-keys");
+        property_set("ro.build.fingerprint", "motorola/XT902_sbm/smq_t:4.1.2/9.8.2Q-34_SMJ-102/122:user/release-keys");
+        property_set("ro.sf.lcd_density", "240");
     } else if (((strstr(hardware_variant, "msm8960dt")) && (ISMATCH(carrier, "vzw")))) {
         /* xt907 */
         property_set("ro.product.device", "scorpion_mini");
@@ -184,6 +190,13 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.sf.lcd_density", "320");
         property_set("ro.mot.build.customerid ", "att");
         property_set("telephony.lteOnGsmDevice", "1");
+    } else if ((ISMATCH(carrier, "SBM")) {
+        property_set("ro.mot.build.customerid ", "sbm");
+        property_set("ro.product.name", "XT902_sbm");
+        property_set("telephony.lteOnGsmDevice", "1");
+        property_set("ro.telephony.default_network", "12");
+        property_set("ro.product.locale.language", "ja");
+        property_set("ro.product.locale.region", "JP");
     }
 
     property_get("ro.product.device", device);

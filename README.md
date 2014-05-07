@@ -8,6 +8,7 @@ This device tree supports:
     qinara (mb886 - Atrix HD - AT&T)
     scorpion_mini (xt907 - Droid Razr M - Verizon)
     smq_u (xt905 - Razr M - GSM)
+    smq_t (201M - Razr M - GSM - JP Softbank)
     solstice (xt901 - Electrify M - US Cellular)
     vanquish (xt926 - Droid Razr HD - Verizon)
     vanquish_u (xt925- Razr HD - GSM)

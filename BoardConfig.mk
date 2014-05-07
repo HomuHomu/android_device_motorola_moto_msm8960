@@ -77,7 +77,7 @@ BOARD_EGL_CFG := $(LOCAL_PATH)/config/egl.cfg
 TARGET_RELEASETOOLS_EXTENSIONS := device/motorola/moto_msm8960
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := moto_msm8960,xt925,xt926,xt907,vanquish_u,vanquish,scorpion_mini,mb886,qinara,asanti,asanti_c,xt897,xt897c
+TARGET_OTA_ASSERT_DEVICE := moto_msm8960,xt925,xt926,xt907,vanquish_u,vanquish,scorpion_mini,mb886,qinara,asanti,asanti_c,xt897,xt897c,201M,XT902_sbm,smq_t
 
 # Recovery
 BOARD_CUSTOM_GRAPHICS := ../../../$(LOCAL_PATH)/graphics.c
@@ -90,5 +90,5 @@ TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TARGET_USERIMAGES_USE_EXT4 := true
 # Needs to be changed for M
-DEVICE_RESOLUTION := 720x1280
-#DEVICE_RESOLUTION := 540x960
+#DEVICE_RESOLUTION := 720x1280
+DEVICE_RESOLUTION := 540x960
