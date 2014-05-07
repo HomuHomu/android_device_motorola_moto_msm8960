@@ -100,6 +100,9 @@
 #define AID_QCOM_DIAG     3010  /* can read/write /dev/diag */
 #define AID_QCOM_THERMAL  3011  /* access for thermal-client socket */
 
+#define AID_FELICA        4000  /* access to felica service */
+#define AID_FLOCK         4001  /* access to felicalock service */
+
 #define AID_MOT_ACCY      9000  /* access to accessory */
 #define AID_MOT_PWRIC     9001  /* power IC */
 #define AID_MOT_USB       9002  /* mot usb */
@@ -193,6 +196,10 @@ static const struct android_id_info android_ids[] = {
 
     { "smartcard", AID_SMARTCARD, },
     { "qcom_thermal", AID_QCOM_THERMAL, },
+
+    { "felica",         AID_FELICA, },
+    { "flock",          AID_FLOCK, },
+
     { "fm_radio",  AID_FM_RADIO, },
     { "mot_accy",	AID_MOT_ACCY, },
     { "mot_pwric",	AID_MOT_PWRIC, },

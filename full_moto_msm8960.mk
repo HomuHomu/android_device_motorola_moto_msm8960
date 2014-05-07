@@ -34,3 +34,6 @@ PRODUCT_NAME := full_moto_msm8960
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := MOTOROLA MSM8960
 PRODUCT_MANUFACTURER := motorola
+
+PRODUCT_COPY_FILES += \
+    device/motorola/moto_msm8960/rootdir/etc/init.SBM.rc:root/init.SBM.rc

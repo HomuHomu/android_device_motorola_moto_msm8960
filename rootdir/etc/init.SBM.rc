@@ -1,0 +1,8 @@
+on boot
+    
+# You can add the directory you want to
+# FeliCa Device Driver
+    insmod /system/lib/modules/felica.ko
+    insmod /system/lib/modules/felica_uart.ko
+    insmod /system/lib/modules/felica_rws.ko
+
