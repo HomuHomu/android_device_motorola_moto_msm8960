@@ -190,7 +190,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.sf.lcd_density", "320");
         property_set("ro.mot.build.customerid ", "att");
         property_set("telephony.lteOnGsmDevice", "1");
-    } else if ((ISMATCH(carrier, "SBM")) {
+    } else if (ISMATCH(carrier, "SBM")) {
         property_set("ro.mot.build.customerid ", "sbm");
         property_set("ro.product.name", "XT902_sbm");
         property_set("telephony.lteOnGsmDevice", "1");
