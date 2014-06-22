@@ -83,8 +83,11 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/motorola/moto_msm8960
 TARGET_OTA_ASSERT_DEVICE := moto_msm8960,xt901,solstice,xt905,smq_u,scorpion_mini_u,xt907,scorpion_mini,xt925,vanquish_u,xt926,vanquish,mb886,qinara,xt897,asanti,xt897c,asanti_c,201M,XT902_sbm,smq_t
 
 # Recovery
+TWRP := true
 TARGET_RECOVERY_NO_MSM_BSP := true
+ifneq ($(TWRP),true)
 BOARD_CUSTOM_GRAPHICS := ../../../$(LOCAL_PATH)/graphics.c
+endif
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
 BOARD_RECOVERY_SWIPE := true
