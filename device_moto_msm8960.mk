@@ -163,6 +163,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
     wifi.supplicant_scan_interval=30
 
+# Disable Red Frame
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.strictmode.visual=0 \
+    persist.sys.strictmode.disable=1
+
 $(call inherit-product, device/motorola/qcom-common/qcom-common.mk)
 $(call inherit-product, device/motorola/qcom-common/idc/idc.mk)
 $(call inherit-product, device/motorola/qcom-common/keychars/keychars.mk)
